@@ -13,9 +13,7 @@ import com.goks.aws.util.Utility;
  * @author Gokul
  *
  */
-public class S3Read {
-    
-    
+public class S3Read { 
     /**
      * This method invokes the S3 read of bucket info
      * @param s3Client The S3Client to connect to AWS S3
