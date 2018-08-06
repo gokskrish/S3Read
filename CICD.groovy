@@ -23,6 +23,7 @@ node() {
         dir("S3Read") {
             sh "mvn install"
         }
+        step([$class: 'JacocoPublisher', execPattern: '**/target/jacoco.exec', healthy:'20', unHealthy:'100'])
     }
     
     stage('Build Docker') { 
